@@ -9,8 +9,8 @@ import colorlog
 import signal
 
 # Configuration
-USERNAME = 'aarsh_gajjar'
-PASSWORD = 'TradingView3.14'
+USERNAME = 'username'
+PASSWORD = 'password'
 FILE_PATH = r'C:\Users\aarsh\Downloads\stock screener\MCAP28032024.xlsx'
 INTERVAL = Interval.in_daily  # Change this to your desired timeframe
 N_BARS = 365  # Number of bars for fetching historical data
