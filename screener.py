@@ -7,16 +7,20 @@ import sys
 import logging
 import colorlog
 import signal
+import os
 
 # Configuration
 USERNAME = 'username'
 PASSWORD = 'password'
-FILE_PATH = r'C:\Users\aarsh\Downloads\stock screener\MCAP28032024.xlsx'
 INTERVAL = Interval.in_daily  # Change this to your desired timeframe
 N_BARS = 365  # Number of bars for fetching historical data
 MAX_WORKERS = 3  # Number of parallel threads
 PADDING_LENGTH = 40  # Length for symbol padding
 LOG_FILE = 'stock_screener.log'
+
+# Determine the path to the Excel file
+current_dir = os.path.dirname(os.path.abspath(__file__))
+FILE_PATH = os.path.join(current_dir, 'MCAP28032024.xlsx')
 
 # Initialize Logging
 log_colors = {
